@@ -1,0 +1,335 @@
+/* ═══════════════════════════════════════════
+   AIN SHAMS HOTEL — JavaFX Stylesheet
+   ═══════════════════════════════════════════ */
+
+/* ── Root & Scene ── */
+.root {
+    -fx-background-color: #080f1e;
+    -fx-font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    -fx-font-size: 13px;
+}
+
+/* ── ScrollPane ── */
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+}
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+.scroll-pane > .scroll-bar:vertical {
+    -fx-background-color: rgba(255,255,255,0.04);
+    -fx-pref-width: 6px;
+}
+.scroll-pane > .scroll-bar:vertical > .thumb {
+    -fx-background-color: rgba(201,168,76,0.3);
+    -fx-background-radius: 3px;
+}
+.scroll-pane > .scroll-bar:horizontal {
+    -fx-pref-height: 0;
+    -fx-opacity: 0;
+}
+
+/* ── Separator ── */
+.separator > .line {
+    -fx-border-color: rgba(201,168,76,0.12);
+    -fx-border-width: 1 0 0 0;
+}
+
+/* ── DatePicker ── */
+.date-picker {
+    -fx-background-color: rgba(255,255,255,0.07);
+    -fx-background-radius: 8;
+    -fx-border-color: rgba(201,168,76,0.2);
+    -fx-border-radius: 8;
+    -fx-border-width: 1;
+}
+.date-picker .text-field {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: rgba(180,200,255,0.4);
+}
+.date-picker .arrow-button {
+    -fx-background-color: rgba(201,168,76,0.15);
+    -fx-background-radius: 0 8 8 0;
+}
+.date-picker .arrow-button .arrow {
+    -fx-background-color: #c9a84c;
+}
+.date-picker-popup {
+    -fx-background-color: #0d1525;
+    -fx-border-color: rgba(201,168,76,0.25);
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.6), 20, 0, 0, 4);
+}
+.date-picker-popup > * > .spinner {
+    -fx-background-color: #0d1525;
+}
+.date-picker-popup > * > .spinner > .button > .left-arrow,
+.date-picker-popup > * > .spinner > .button > .right-arrow {
+    -fx-background-color: #c9a84c;
+}
+.date-picker-popup > * > .day-name-cell,
+.date-picker-popup > * > .week-number-cell {
+    -fx-text-fill: rgba(180,200,255,0.5);
+    -fx-font-size: 11px;
+}
+.date-picker-popup > * > .date-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: rgba(200,220,255,0.8);
+}
+.date-picker-popup > * > .date-cell:hover {
+    -fx-background-color: rgba(201,168,76,0.15);
+    -fx-background-radius: 50%;
+    -fx-text-fill: #c9a84c;
+}
+.date-picker-popup > * > .selected {
+    -fx-background-color: #c9a84c;
+    -fx-background-radius: 50%;
+    -fx-text-fill: #0a0e17;
+    -fx-font-weight: bold;
+}
+.date-picker-popup > * > .today {
+    -fx-border-color: rgba(201,168,76,0.4);
+    -fx-border-radius: 50%;
+    -fx-border-width: 1;
+}
+.date-picker-popup .month-year-pane {
+    -fx-background-color: rgba(0,0,0,0.3);
+}
+.date-picker-popup .spinner > .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+/*  ComboBox  */
+.combo-box {
+    -fx-background-color: rgba(255,255,255,0.07);
+    -fx-background-radius: 8;
+    -fx-border-color: rgba(201,168,76,0.2);
+    -fx-border-radius: 8;
+    -fx-border-width: 1;
+    -fx-padding: 2 0;
+}
+.combo-box .list-cell {
+    -fx-text-fill: white;
+    -fx-background-color: transparent;
+    -fx-padding: 4 12;
+}
+.combo-box .arrow-button {
+    -fx-background-color: rgba(201,168,76,0.12);
+}
+.combo-box .arrow {
+    -fx-background-color: #c9a84c;
+}
+.combo-box-popup > .list-view {
+    -fx-background-color: #0d1525;
+    -fx-border-color: rgba(201,168,76,0.25);
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.6), 16, 0, 0, 4);
+}
+.combo-box-popup > .list-view > .virtual-flow > .clipped-container > .sheet > .list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: rgba(200,220,255,0.85);
+    -fx-padding: 10 16;
+}
+.combo-box-popup > .list-view > .virtual-flow > .clipped-container > .sheet > .list-cell:hover {
+    -fx-background-color: rgba(201,168,76,0.1);
+    -fx-text-fill: #c9a84c;
+}
+.combo-box-popup > .list-view > .virtual-flow > .clipped-container > .sheet > .list-cell:selected {
+    -fx-background-color: rgba(201,168,76,0.18);
+    -fx-text-fill: #c9a84c;
+}
+
+/* ── TextField & PasswordField ── */
+.hotel-textfield {
+    -fx-background-color: rgba(255,255,255,0.07);
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: rgba(180,200,255,0.4);
+    -fx-background-radius: 8;
+    -fx-border-color: rgba(201,168,76,0.2);
+    -fx-border-radius: 8;
+    -fx-border-width: 1;
+    -fx-padding: 12 14;
+}
+.hotel-textfield:focused {
+    -fx-border-color: #c9a84c;
+    -fx-border-width: 1.5;
+    -fx-background-color: rgba(255,255,255,0.1);
+}
+
+/* ── Buttons ── */
+.primary-btn {
+    -fx-background-color: linear-gradient(to right, #c9a84c, #e8c97a);
+    -fx-text-fill: #0a0e17;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-background-radius: 8;
+    -fx-padding: 13 0;
+    -fx-cursor: hand;
+}
+.primary-btn:hover {
+    -fx-background-color: linear-gradient(to right, #e8c97a, #c9a84c);
+}
+
+.secondary-btn {
+    -fx-background-color: rgba(255,255,255,0.07);
+    -fx-text-fill: rgba(200,220,255,0.8);
+    -fx-font-size: 13px;
+    -fx-background-radius: 8;
+    -fx-border-color: rgba(255,255,255,0.1);
+    -fx-border-radius: 8;
+    -fx-border-width: 1;
+    -fx-padding: 11 0;
+    -fx-cursor: hand;
+}
+.secondary-btn:hover {
+    -fx-background-color: rgba(255,255,255,0.12);
+}
+
+.danger-btn {
+    -fx-background-color: rgba(239,68,68,0.15);
+    -fx-text-fill: #ef4444;
+    -fx-font-size: 13px;
+    -fx-background-radius: 8;
+    -fx-border-color: rgba(239,68,68,0.3);
+    -fx-border-radius: 8;
+    -fx-border-width: 1;
+    -fx-padding: 11 0;
+    -fx-cursor: hand;
+}
+.danger-btn:hover {
+    -fx-background-color: rgba(239,68,68,0.25);
+}
+
+.back-btn {
+    -fx-background-color: transparent;
+    -fx-text-fill: rgba(200,220,255,0.6);
+    -fx-font-size: 13px;
+    -fx-cursor: hand;
+    -fx-padding: 6 12;
+    -fx-background-radius: 6;
+}
+.back-btn:hover {
+    -fx-text-fill: #c9a84c;
+    -fx-background-color: rgba(201,168,76,0.08);
+}
+
+/* ── Labels ── */
+.title-label {
+    -fx-font-family: "Georgia";
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+.subtitle-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: rgba(180,200,255,0.6);
+}
+.field-label {
+    -fx-font-size: 12px;
+    -fx-text-fill: rgba(200,220,255,0.65);
+    -fx-font-weight: bold;
+}
+.card-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+/* ── Cards ── */
+.card {
+    -fx-background-color: rgba(255,255,255,0.04);
+    -fx-background-radius: 14;
+    -fx-border-color: rgba(255,255,255,0.08);
+    -fx-border-radius: 14;
+    -fx-border-width: 1;
+}
+
+/* ── Info / Success / Error boxes ── */
+.info-box {
+    -fx-background-color: rgba(0,212,255,0.08);
+    -fx-text-fill: #00d4ff;
+    -fx-background-radius: 8;
+    -fx-border-color: rgba(0,212,255,0.2);
+    -fx-border-radius: 8;
+    -fx-border-width: 1;
+    -fx-padding: 10 14;
+}
+.success-box {
+    -fx-background-color: rgba(16,185,129,0.08);
+    -fx-text-fill: #10b981;
+    -fx-background-radius: 8;
+    -fx-border-color: rgba(16,185,129,0.2);
+    -fx-border-radius: 8;
+    -fx-border-width: 1;
+    -fx-padding: 10 14;
+}
+.error-box {
+    -fx-background-color: rgba(239,68,68,0.08);
+    -fx-text-fill: #ef4444;
+    -fx-background-radius: 8;
+    -fx-border-color: rgba(239,68,68,0.2);
+    -fx-border-radius: 8;
+    -fx-border-width: 1;
+    -fx-padding: 10 14;
+}
+
+/* ── Stats ── */
+.stat-box {
+    -fx-background-color: rgba(255,255,255,0.04);
+    -fx-background-radius: 10;
+    -fx-border-color: rgba(255,255,255,0.07);
+    -fx-border-radius: 10;
+    -fx-border-width: 1;
+    -fx-padding: 16;
+}
+.stat-value {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+.stat-label {
+    -fx-font-size: 11px;
+    -fx-text-fill: rgba(180,200,255,0.5);
+}
+
+/* ── Dialogs ── */
+.hotel-dialog {
+    -fx-background-color: #0d1525;
+}
+.hotel-dialog .header-panel {
+    -fx-background-color: #0d1525;
+}
+.hotel-dialog .content.label {
+    -fx-text-fill: rgba(200,220,255,0.8);
+}
+.hotel-dialog .button-bar > .container > .button {
+    -fx-background-radius: 8;
+    -fx-padding: 9 18;
+    -fx-cursor: hand;
+}
+
+/* ── Alert ── */
+.alert {
+    -fx-background-color: #0d1525;
+}
+.alert .header-panel {
+    -fx-background-color: #0d1525;
+}
+.alert .content.label {
+    -fx-text-fill: rgba(200,220,255,0.85);
+}
+
+/* ── ToggleButton ── */
+.toggle-button {
+    -fx-cursor: hand;
+}
+
+/* ── TextInputDialog ── */
+.text-input-dialog {
+    -fx-background-color: #0d1525;
+}
